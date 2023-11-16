@@ -1,0 +1,64 @@
+<link href="2ndGen.css" rel="stylesheet">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body class="main">
+
+        <div class='menu' style='position: absolute; top: 0; left: 0; width: 100%; height: 40px;'>
+            <div class="backButton" id="backButton" onclick="history.back()"> &#8592; </div>
+            <h1 class="Title">Console Archive</h1>
+        </div>
+
+
+        <div style="top: 50px;" class="previewContainer">
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consOne" class="prevImg" src="photos/Intellevision.jpg">
+            </div>
+
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consTwo" class="prevImg" src="photos/ColecoVision.jpg">
+            </div>
+
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consThree" class="prevImg" src="photos/Atari-2600.jpg">
+            </div>
+
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consFour" class="prevImg" src="photos/Atari5200.jpg">
+            </div>
+        </div>
+
+        <div style="top: 300px;" class="previewContainer">
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consFive" class="prevImg" src="photos/Vectrex.jpg">
+            </div>
+
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consSix" class="prevImg" src="photos/Magnavox2.jpg">
+            </div>
+
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consSeven" class="prevImg" src="photos/RCAStudioII.jpg">
+            </div>
+
+            <div onclick="showInfo(event)" class="preview">
+                <img id="consEight" class="prevImg" src="photos/InterTon VC4000.png">
+            </div>
+        </div>
+
+        <div id="infoBox" class="infoFrame">
+            <span class="Name" id="consName">
+                Sample Text
+            </span> 
+            <br>
+            &#8213&#8213&#8213&#8213&#8213&#8213&#8213&#8213
+            <br>
+            <span class="info" id="consInfo">
+                info stuff
+            </span>
+        </div>
+    </body>
+    <script src="2ndGen.js"></script>
+</html>
