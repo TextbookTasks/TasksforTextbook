@@ -1,0 +1,103 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url("wall.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.bar{
+	position: absolute;
+	display: flex;
+	width: 100%;
+	height: 35px;
+	top: 0%;
+	left: 0%;
+	background-color: rgb(220, 220, 220, 0.1);
+	animation-name: menuFloat;
+	animation-duration: 2.3s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+}
+
+.menu{
+  width: 33px;
+	height: 33px;
+	background-image: url("menu.png");
+	margin-top: 3px;
+}
+
+.contextMenu{
+	width: 100%;
+	height: 35px;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.textLinkMain, .textLinkSections{
+	width: 100px;
+	text-align: left;
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: lighter;
+	color: grey;
+	margin-top: 3px;
+	margin-right: 15px;
+}
+
+.textLinkAbout{
+	width: 100px;
+	text-align: left;
+	font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-size: 24px;
+	font-weight: lighter;
+	color: grey;
+	margin-top: 3px;
+}
+
+.banner{
+	position: absolute;
+	text-align: center;
+	top: 10%;
+	width: 800px;
+	height: 800px;
+	font-family:  Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-size: 72px;
+	color: #d6d6d6;
+	background-color: rgb(72, 72, 72, 0.3);
+	animation-name: bannerShow;
+	animation-duration: 2.3s;
+	animation-iteration-count: 1;
+	animation-direction: alternate;
+	
+}
+
+.desc{
+	font-family:  Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	font-size: 34px;
+	color: #d6d6d6;
+}
+
+
+@keyframes menuFloat{
+	from{
+		top: -5%;
+		opacity: 0;
+	}
+	to{
+		top: 0;
+		opacity: 1;
+	}
+}
+
+
+@keyframes bannerShow{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
