@@ -1,0 +1,103 @@
+.menuBar{
+	position: absolute;
+	height: 35px;
+	width: 100%;
+	top: 0px;
+	background-color: #717171;
+	left: 0px;
+	text-align: center;
+}
+
+.title{
+	color: #FFFFFF;	
+	font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+	font-size: 24px;
+}
+
+.greeter{
+	position: absolute;
+	top: 27%;
+	right: 13%;
+	width: 250px;
+	height: 350px;
+	font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
+	font-size: 56px;
+	font-style: bold;
+	color: black;
+	animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.desc{
+	font-size: 24px;
+}
+
+.linksStorage{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	height: 600px;
+	width: 500px;
+	top: 20%;
+	left: 2%;
+	animation-duration: 3s;
+  animation-name: slideinpics;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.previewPaper{
+	width: 500px;
+	height: 300px;
+	background-image: url('printer.jpg');
+	background-size: contain;
+	margin: 5px;
+}
+
+.preview3d{
+	width: 500px;
+	height: 300px;
+	background-image: url('3dprint.jpg');
+	background-size: contain;
+	margin: 5px;
+}
+
+.bar1, .bar2, .bar3{
+	width: 35px;
+  height: 5px;
+  background-color: #FFF;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.container{
+	width: 35px;
+	height 35px;
+}
+
+@keyframes slidein{
+	from{
+		right: 0%;
+		opacity: 0%;
+	}
+	to{
+		right: 13%;
+		opacity: 100%;
+	}
+}
+
+@keyframes slideinpics{
+	from{
+		left: -15%;
+		opacity: 0%;
+	}
+	to{
+		left: 2%;
+		opacity: 100%;
+	}
+}
+
+
+
