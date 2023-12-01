@@ -1,0 +1,17 @@
+.greeter{
+    font-size: 32px;
+    color: black;
+    animation-duration: 1s;
+}
+
+.desc{
+    font-size: 24px;
+    color: black;
+    animation-duration: 1s;
+}
+
+.mname{
+    font-size: 16px;
+    color: black;
+}
+

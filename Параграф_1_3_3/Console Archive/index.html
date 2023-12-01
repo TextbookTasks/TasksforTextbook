@@ -1,0 +1,60 @@
+<link href="index.css" rel="stylesheet">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body class="main" onload="size_manager()">
+        <div class="wrapper">
+            <div class='menu' style='position: absolute; top: 0; left: 0; width: 100%; height: 40px;'>
+                <h1 class="Title">Console Archive</h1>
+            </div>
+
+            <div id="gallery" class="gallery">
+                <img id="previewPic" class="pic" src="GalleryPics/Cassete.jpg">
+                <a id="prevImg" class="prev" onclick="showPrev()">&#10094;</a>
+                <a id="nextImg" class="next" onclick="showNext()">&#10095;</a>
+            </div> 
+    
+            <div id="prevs" class="previewContainer">
+                <a id="first" class="preview"></a>
+                <a id="second" class="preview"></a>
+                <a id="third" class="preview"></a>
+                <a id="fourth" class="preview"></a>
+                <a id="fifth" class="preview"></a>
+                <a id="sixth" class="preview"></a>
+            </div>
+    
+            <a id="desc" class="description">Console Archive - Это информационная библиотека, хранящая в себе всю информацию о консолях первых поколений</a>
+    
+            <div id="links" class="links">
+                <div  onclick="window.location.href = '1stGen/1stGen.html' "class="firstGen">
+                    <span class="Text1">
+                        <h1>
+                             Консоли Первого поколения
+                            <br>
+                            <br>
+                            <br>
+                             1st Gen Consoles
+                         </h1>
+                    </span>
+                </div>
+    
+                <div onclick="window.location.href = '2ndGen/2ndGen.html'" class="secondGen">
+                    <span class="Text2">
+                        <h1>
+                            Консоли Второго поколения
+                            <br>
+                            <br>
+                            <br>
+                            2nd Gen Consoles
+                       </h1>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
