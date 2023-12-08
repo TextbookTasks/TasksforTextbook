@@ -1,0 +1,12 @@
+window.onload = function() {
+                document.getElementById('formname').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // these IDs from the previous steps
+                    emailjs.sendForm('serviceID', 'templateID', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
