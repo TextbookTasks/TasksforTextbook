@@ -1,0 +1,78 @@
+.greeter{
+    font-size: 32px;
+    color: black;
+    animation-duration: 1s;
+}
+
+.desc{
+    font-size: 24px;
+    color: black;
+    animation-duration: 1s;
+}
+
+.mname{
+    font-size: 16px;
+    color: black;
+}
+
+.header{
+    position: relative;
+    background-color: white;
+    margin: 1px;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 190px;
+}
+
+.bodyContainer{
+    position: relative;
+    margin: 1px;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 400px;
+}
+
+.base{
+    position: absolute;
+    background-color: white;
+    margin: 3px;
+    top: 0%;
+    left: 265px;
+    width: 80%;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.sideMenu{
+    position: absolute;
+    background-color: white;
+    margin: 3px;
+    top: 0%;
+    left: 0%;
+    width: 260px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.footer{
+    position: relative;
+    background-color: white;
+    margin: 1px;
+    bottom: -8px;
+    left: 0%;
+    width: 100%;
+    height: 30px;
+}
+
+h3{
+    font-size: 18px;
+    color: black;
+    transition: font-size linear 2s 0.5s;
+}
+
+h3:hover{
+    font-size: 24px;
+}
+
