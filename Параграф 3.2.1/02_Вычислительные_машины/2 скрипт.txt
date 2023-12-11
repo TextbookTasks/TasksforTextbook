@@ -1,0 +1,12 @@
+window.onload = function() {
+                document.getElementById('infoForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_wvl8dwk', 'template_8hvxk1l', this)
+                        .then(function() {
+                            console.log('SUCCESS!');
+                        }, function(error) {
+                            console.log('FAILED...', error);
+                        });
+                });
+            }
